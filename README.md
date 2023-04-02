@@ -1,2 +1,3 @@
-# aos-samples
-Android sample collections
+# android-collection
+
+Android collection
