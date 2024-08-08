@@ -1,0 +1,18 @@
+spring:
+  h2:
+    console:
+      # H2 데이터베이스 콘솔을 활성화한다. 이 콘솔을 통해 웹 브라우저에서 H2 데이터베이스에 직접 접근할 수 있다.
+      enabled: true
+  jpa:
+    hibernate:
+      # Hibernate의 DDL(Data Definition Language) 자동 생성 기능을 비활성화한다. 이는 데이터베이스 스키마를 자동으로 생성하거나 업데이트하지 않도록 한다.
+      ddl-auto: none
+    properties:
+      hibernate:
+        # Hibernate가 생성하는 SQL 쿼리에 주석을 추가하도록 설정한다. 이 주석은 쿼리의 출처를 설명하는 데 도움이 된다.
+        use_sql_comments: true
+
+logging:
+  level:
+    # 로깅 레벨을 'info'로 설정한다. 이는 애플리케이션의 루트 로거가 'info' 레벨 이상의 로그 메시지를 출력하도록 한다.
+    root: info
